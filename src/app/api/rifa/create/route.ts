@@ -17,9 +17,7 @@ interface RowHeaders {
   Comprovante: string
 }
 
-interface Row {
-  [header: string]: string | number | boolean
-}
+type Row = Record<string, string | number | boolean>
 
 export async function POST(request: Request) {
   const body: RequestBody = await request.json()
@@ -33,14 +31,14 @@ export async function POST(request: Request) {
 
   let currTicketNumber = lastTicketNumber
   let tickets: RowHeaders[] = []
-  for (var i = 0; i < body.amount; i++) {
+  for (let i = 0; i < body.amount; i++) {
     currTicketNumber++
     tickets.push({
       Num: currTicketNumber,
       Nome: body.name,
       Telefone: "'" + body.phone,
       Endereco: body.address,
-      Comprovante: body.paymentReceiptUrl,
+      Comprovante: body.paymentReceiptUrl
     })
   }
 
