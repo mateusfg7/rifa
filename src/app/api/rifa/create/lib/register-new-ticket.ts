@@ -34,5 +34,11 @@ export async function registerNewTickets(ticketBody: CreateTicketBody) {
 
   await sheet.addRows(tickets as unknown as Row[])
 
-  return tickets
+  return {
+    Números: tickets.map(ticket => ticket.Num),
+    Nome: ticketBody.name,
+    Telefone: ticketBody.phone,
+    Endereço: ticketBody.address,
+    Comprovante: ticketBody.paymentReceiptUrl
+  }
 }
