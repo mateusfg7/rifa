@@ -1,49 +1,19 @@
 import { NextResponse } from 'next/server'
-import { loadSpreadsheetDocument } from './lib/loadSpreadsheetDocument'
-
-interface RequestBody {
-  name: string
-  phone: string
-  address: string
-  paymentReceiptUrl: string
-  amount: number
-}
-
-interface RowHeaders {
-  Num: number
-  Nome: string
-  Telefone: string
-  Endereco: string
-  Comprovante: string
-}
-
-type Row = Record<string, string | number | boolean>
+import { registerNewTickets } from './lib/registerNewTicket'
 
 export async function POST(request: Request) {
-  const body: RequestBody = await request.json()
+  const formData = await request.formData()
 
-  const doc = await loadSpreadsheetDocument()
-
-  const sheet = doc.sheetsByIndex[0]
-
-  const rows = await sheet.getRows()
-  const lastTicketNumber = Number(rows[rows.length - 1].Num)
-
-  let currTicketNumber = lastTicketNumber
-  let tickets: RowHeaders[] = []
-  for (let i = 0; i < body.amount; i++) {
-    currTicketNumber++
-    tickets.push({
-      Num: currTicketNumber,
-      Nome: body.name,
-      Telefone: "'" + body.phone,
-      Endereco: body.address,
-      Comprovante: body.paymentReceiptUrl
-    })
+  const body: CreateTicketBody = {
+    name: formData.get('name') as string,
+    phone: formData.get('phone') as string,
+    address: formData.get('address') as string,
+    paymentReceiptUrl: formData.get('paymentReceiptUrl') as string,
+    amount: Number(formData.get('amount'))
   }
 
   try {
-    await sheet.addRows(tickets as unknown as Row[])
+    const tickets = await registerNewTickets(body)
     return NextResponse.json(
       { message: 'Rifa cadastrada com sucesso', rifas: tickets },
       { status: 201 }
