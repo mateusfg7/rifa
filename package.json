@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google-cloud/storage": "^6.10.1",
     "@types/google-spreadsheet": "^3.3.2",
     "@types/node": "20.2.5",
     "@types/react": "18.2.7",
