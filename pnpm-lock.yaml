@@ -25,6 +25,9 @@ dependencies:
   google-spreadsheet:
     specifier: ^3.3.0
     version: 3.3.0
+  lucide-react:
+    specifier: ^0.233.0
+    version: 0.233.0(react@18.2.0)
   next:
     specifier: 13.4.4
     version: 13.4.4(react-dom@18.2.0)(react@18.2.0)
@@ -2212,6 +2215,14 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+
+  /lucide-react@0.233.0(react@18.2.0):
+    resolution: {integrity: sha512-r0jMHF0vPDq2wBbZ0B3rtIcBjDyWDKpHu+vAjD2OHn2WLUr3HN5IHovtO0EMgQXuSI7YrMZbjsEZWC2uBHr8nQ==}
+    peerDependencies:
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /merge-stream@2.0.0:
     resolution: {integrity: sha512-abv/qOcuPfk3URPfDzmZU1LKmuw8kT+0nIHvKrKgFrwifol/doWcdA4ZqsWQ8ENrFKkd67Mfpo/LovbIUsbt3w==}
