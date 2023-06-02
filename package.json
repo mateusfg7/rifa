@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "bump-tag": "tsx tools/bump-tag-version.ts"
   },
   "dependencies": {
     "@google-cloud/storage": "^6.10.1",
@@ -41,5 +42,10 @@
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0",
     "typescript": "5.0.4"
+  },
+  "optionalDependencies": {
+    "@types/semver": "^7.5.0",
+    "semver": "^7.5.1",
+    "simple-git": "^3.19.0"
   }
 }
