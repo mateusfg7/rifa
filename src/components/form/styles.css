@@ -1,0 +1,13 @@
+.ticket-form {
+  .fieldset {
+    @apply space-y-1;
+  }
+  label {
+    @apply block text-lg font-bold;
+  }
+
+  input {
+    @apply rounded-lg;
+    @apply bg-transparent;
+  }
+}
