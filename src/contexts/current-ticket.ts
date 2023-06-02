@@ -17,13 +17,13 @@ interface CurrTicketStore {
 
 export const useCurrTicketStore = create<CurrTicketStore>()(set => ({
   ticket: {
-    name: 'Maria Clara Brito Santana',
-    address: 'Rua Parú, 1040 - Recanto',
-    phone: '(37) 99844-0073',
+    name: 'Nome Completo do Comprador',
+    address: 'Rua Exemplo, 0000 - Bairro',
+    phone: '(99) 99999-9999',
     paymentDate: new Date(),
-    numbers: [50, 51]
+    numbers: [1, 2]
   },
-  newTicket: true,
+  newTicket: false,
   addNewTicket: ticket => set(state => ({ ticket })),
   toggleNewTicket: () => set(state => ({ newTicket: !state.newTicket }))
 }))
