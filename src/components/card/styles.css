@@ -1,0 +1,21 @@
+.card {
+  @apply flex aspect-video h-[422px] w-[1000px] overflow-hidden rounded-[17.95px] bg-[#ECD5B6];
+
+  .bg-text-gradient {
+    @apply bg-gradient-to-br from-[#612D19] to-[#AA6141] bg-clip-text text-transparent;
+  }
+
+  .info-row {
+    @apply flex w-[650px] items-center justify-between gap-2;
+
+    .key {
+      @apply whitespace-break-spaces font-bold;
+    }
+    .space-dots {
+      @apply flex flex-1 overflow-hidden text-base opacity-60;
+    }
+    .value {
+      @apply w-[57%] whitespace-break-spaces italic;
+    }
+  }
+}
