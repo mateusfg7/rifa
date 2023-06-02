@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server'
 
-import { registerNewTickets } from './lib/register-new-ticket'
-import { saveFileToDisk } from './lib/save-file-to-disk'
-import { uploadReceiptToGcs } from './lib/upload-receipt-to-gcs'
+import { registerNewTickets } from '@/lib/register-new-ticket'
+import { saveFileToDisk } from '@/lib/save-file-to-disk'
+import { uploadReceiptToGcs } from '@/lib/upload-receipt-to-gcs'
 
 export async function POST(request: Request) {
   const formData = await request.formData()
