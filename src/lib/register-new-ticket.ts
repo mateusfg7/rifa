@@ -1,4 +1,4 @@
-import { loadSpreadsheetDocument } from './loadSpreadsheetDocument'
+import { loadSpreadsheetDocument } from './load-spreadshee-document'
 
 interface RowHeaders {
   Num: number
