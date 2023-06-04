@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <div className="main-gradient flex min-h-screen w-screen items-center justify-center p-5">
-        <div className="item-center flex flex-col items-center justify-center space-y-10 rounded-xl bg-gradient-to-br from-white to-neutral-50 p-10 shadow-xl">
+        <div className="item-center flex flex-col items-center justify-center space-y-10 rounded-xl bg-gradient-to-br from-neutral-50/70 to-white p-10 shadow-xl">
           <h1 className="main-gradient bg-clip-text text-3xl font-bold text-transparent">
             Cadastrar nova rifa
           </h1>
