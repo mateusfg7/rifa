@@ -1,3 +1,12 @@
+### [0.1.2](https://github.com/mateusfg7/rifa/compare/0.1.1...0.1.2) (2023-06-04)
+
+
+### Features
+
+* **ceo:** update metadata info ([bd868c3](https://github.com/mateusfg7/rifa/commit/bd868c3527d7c87f35eae5e55007edb044f8ea15))
+* **ui:** create icon ([2d7ac02](https://github.com/mateusfg7/rifa/commit/2d7ac02055e15d9fcf8a93d3c499a9ab30d2d3bc))
+* **ui:** update main content styles ([d7ed75e](https://github.com/mateusfg7/rifa/commit/d7ed75e65c91382b1e799e6ba4946636366031c4))
+
 ### [0.1.1](https://github.com/mateusfg7/rifa/compare/0.1.0...0.1.1) (2023-06-04)
 
 
