@@ -1,3 +1,11 @@
+### [0.1.1](https://github.com/mateusfg7/rifa/compare/0.1.0...0.1.1) (2023-06-04)
+
+
+### Bug Fixes
+
+* **deps:** update modern-screenshot to 4.4.26 ([5a3ee1f](https://github.com/mateusfg7/rifa/commit/5a3ee1fcc73186064cfd91448d376b7274fb06a6))
+* **lib:** try fix env variables issues ([2f21830](https://github.com/mateusfg7/rifa/commit/2f21830b600d24916043f3e9b4f18c157991c414))
+
 ## [0.1.0](https://github.com/mateusfg7/rifa/compare/1c123ac4890fe7652e1abefd808715466ecb1fa7...0.1.0) (2023-06-02)
 
 
