@@ -1,9 +1,11 @@
-name: 'Release and deploy'
+name: 'Release new version'
 
 on:
   push:
     branch:
       - main
+
+  workflow_dispatch:
 
 jobs:
   sync-tag:
