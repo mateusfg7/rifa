@@ -18,7 +18,7 @@
     "autoprefixer": "10.4.14",
     "date-fns": "^2.30.0",
     "eslint-config-next": "13.4.4",
-    "google-spreadsheet": "^3.3.0",
+    "google-spreadsheet": "^4.0.0",
     "lucide-react": "^0.233.0",
     "modern-screenshot": "^4.4.26",
     "next": "13.4.4",
