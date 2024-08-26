@@ -19,7 +19,7 @@
     "date-fns": "^2.30.0",
     "eslint-config-next": "13.4.4",
     "google-spreadsheet": "^3.3.0",
-    "lucide-react": "^0.233.0",
+    "lucide-react": "^0.436.0",
     "modern-screenshot": "^4.4.26",
     "next": "13.4.4",
     "postcss": "8.4.24",
